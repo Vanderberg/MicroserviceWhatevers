@@ -5,8 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstractions\Builders" />
     <Folder Include="Entities" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
   </ItemGroup>
 
 </Project>

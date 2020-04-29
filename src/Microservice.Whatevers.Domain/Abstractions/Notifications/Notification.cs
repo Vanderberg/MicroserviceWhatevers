@@ -7,13 +7,13 @@ namespace Microservice.Whatevers.Domain.Abstractions.Notifications
     {
         private readonly List<string> _errrors = new List<string>();
         
-        public void AddErro(string error) => _errrors.Add(error);
+        public void AddError(string error) => _errrors.Add(error);
 
         public void AddError(INotification notification) => AddErrors(notification?.GetErrors());
         
-        public void AddErro(string error, INotification externalNofification)
+        public void AddError(string error, INotification externalNofification)
         {
-            AddErro(error);
+            AddError(error);
             AddErrors(externalNofification?.GetErrors());
         }
 
